@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quality Team</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #1e2a38, #3a4e6e);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #e0e0e0;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00d4ff;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .navbar a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background: #00d4ff;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #0099cc;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+        }
+
+        .navbar a:hover::after {
+            transform: scaleX(1);
+        }
+
+        main {
+            height: calc(100vh - 80px); /* Dynamic height adjustment */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <a href="pagina.html">
+                <img src="Logo.png" alt="Quality Team Logo">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <a href="./estilos/Descarga.html" target="paginas">Download</a>
+            <a href="paginainfo copy.html" target="paginas">FALL OF THE GODS</a>
+            <a href="./estilos/Vision y mision.html" target="paginas">Visión y Misión</a>
+            <a href="./estilos/Ayuda.html" target="paginas">Ayuda</a>
+        </nav>
+    </header>
+
+    <main>
+        <iframe name="paginas" src="paginainfo copy.html"></iframe>
+    </main>
+        
+</body>
+</html>
+

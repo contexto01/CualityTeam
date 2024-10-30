@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda e Información</title>
+    <link rel="stylesheet" href="Ayuda.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #00f; /* Borde azul neón */
+            box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3); /* Sombra azul neón */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #00f;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0ff; /* Color cian neón en hover */
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            color: #00f; /* Texto azul neón */
+            text-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Sombra de texto azul neón */
+        }
+
+        .faq-item {
+            background: #222;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 255, 0.3); /* Sombra azul neón */
+        }
+
+        .faq-item p {
+            margin: 10px 0;
+            color: #ddd; /* Texto gris claro */
+        }
+
+        form {
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.3); /* Sombra azul neón */
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #00f; /* Texto azul neón */
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background: #222;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        form textarea {
+            height: 120px;
+        }
+
+        form input[type="submit"] {
+            background-color: #00f;
+            color: #000;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0ff; /* Color cian neón en hover */
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #00f; /* Borde azul neón */
+            box-shadow: 0 -4px 8px rgba(0, 0, 255, 0.3); /* Sombra azul neón */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayuda e Información</h1>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cómo descargo el juego?</h3>
+                <p>Para descargar el juego, dirígete a la sección de DOWNLOAD y haz clic en el botón "Descargar FALL OF THE GODS". Asegúrate de cumplir con los requisitos del sistema antes de proceder.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cuáles son los requisitos del sistema?</h3>
+                <p>Los requisitos del sistema incluyen: Windows 10, Intel Core i5 o AMD equivalente, 8 GB de RAM, NVIDIA GTX 960 o AMD equivalente, y 50 GB de espacio disponible.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo contacto con soporte técnico?</h3>
+                <p>Puedes contactar con nuestro equipo de soporte técnico enviando un correo electrónico a cualityteam2024@gmail.com o llenando el formulario de contacto en la sección de <a href="#contacto">Contacto</a>.</p>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/cualityteam2024@gmail.com" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <input type="submit" class="btn" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Quality Team. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
