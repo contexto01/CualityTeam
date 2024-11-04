@@ -56,7 +56,7 @@ const game = games[gamePage] as Game
             }
           </ul>
         </div>
-        <a href="/" class="back-button text-blue-400 mt-4 inline-block">↩️ Regresar</a>
+        <a href="/" class="text-blue-400 mt-4 inline-block">↩️ Regresar</a>
       </div>
     </div>
 
@@ -70,28 +70,21 @@ const game = games[gamePage] as Game
       />
       <h2 class="text-xl mt-4">Compra {game.title}</h2>
       <p class="text-center">Elige una versión y comienza tu aventura.</p>
-
-      <div class="purchase-options bg-tertiary-color p-4 rounded mt-4">
-        <h2 class="text-lg">Versión Estándar</h2>
-        <p>Incluye el juego base y acceso completo a futuras actualizaciones.</p>
-        <a
-          href="compra_estandar.html"
-          class="purchase-button bg-blue-500 text-white text-center p-2 rounded block mt-2"
-          >Comprar por $19.99</a
-        >
-      </div>
-
-      <div class="purchase-options bg-tertiary-color p-4 rounded mt-4">
-        <h2 class="text-lg">Edición Deluxe</h2>
-        <p>
-          Incluye el juego base, contenido adicional y acceso anticipado a nuevas misiones.
-        </p>
-        <a
-          href="compra_deluxe.html"
-          class="purchase-button bg-blue-500 text-white text-center p-2 rounded block mt-2"
-          >Comprar por $29.99</a
-        >
-      </div>
+      {
+        game.buyGame.map((buyGame) => (
+          <div class="purchase-options bg-tertiary-color p-4 rounded mt-4">
+            <h2 class="text-lg">{buyGame.title}</h2>
+            <p>{buyGame.description}</p>
+            <a
+              href={buyGame.linkGame}
+              class="purchase-button bg-primary-color text-secondary-color hover:bg-secondary-color hover:text-primary-color transition-all text-center p-2 rounded block mt-2"
+              target="_blank"
+            >
+              {buyGame.buttonDescription}
+            </a>
+          </div>
+        ))
+      }
     </div>
   </div>
 </Layout>

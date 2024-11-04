@@ -44,6 +44,18 @@ const currentYear = new Date().getFullYear()
     --tertiary-color: #050505; /* Negro */
     --quaternary-color: #111;
   }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-tertiary-color;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary-color;
+  }
   html {
     font-family:
       'Roboto Condensed Variable',

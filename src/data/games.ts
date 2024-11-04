@@ -22,7 +22,22 @@ const games: Games = {
     ],
     trailer:
       'https://www.youtube.com/embed/vd6KhnwnthU?autoplay=1&loop=1&playlist=vd6KhnwnthU&mute=1',
-    link: '/games/fallOfTheGods'
+    link: '/games/fallOfTheGods',
+    buyGame: [
+      {
+        title: 'Versión Demo',
+        description: '¡Descarga ahora y comienza tu prueba en esta gran aventura!',
+        buttonDescription: 'Descargar',
+        linkGame:
+          'https://www.mediafire.com/file/qftdmxbc0u4ls6w/Fall_of_the_gods_%25282%2529.exe/file'
+      },
+      {
+        title: 'Versión Completa',
+        description: '¡Compra ahora y disfruta de la experiencia completa!',
+        buttonDescription: 'Comprar por $4.99',
+        linkGame: '/proximamente'
+      }
+    ]
   },
   blasphemous: {
     title: 'Blasphemous',
@@ -41,7 +56,15 @@ const games: Games = {
     ],
     trailer:
       'https://www.youtube.com/embed/seGW4vdfL7A?autoplay=1&loop=1&playlist=seGW4vdfL7A',
-    link: '/games/blasphemous'
+    link: '/games/blasphemous',
+    buyGame: [
+      {
+        title: 'Versión Completa',
+        description: '¡Compra ahora y disfruta de la experiencia completa!',
+        buttonDescription: 'Comprar por $19.99',
+        linkGame: 'https://store.steampowered.com/app/774361/Blasphemous/'
+      }
+    ]
   },
   deadCells: {
     title: 'Dead Cells',
@@ -60,7 +83,15 @@ const games: Games = {
     ],
     trailer:
       'https://www.youtube.com/embed/RvGaSPTcTxc?autoplay=1&loop=1&playlist=RvGaSPTcTxc',
-    link: '/games/deadCells'
+    link: '/games/deadCells',
+    buyGame: [
+      {
+        title: 'Versión Completa',
+        description: '¡Compra ahora y disfruta de la experiencia completa!',
+        buttonDescription: 'Comprar por $24.99',
+        linkGame: 'https://store.steampowered.com/app/588650/Dead_Cells/'
+      }
+    ]
   }
 }
 

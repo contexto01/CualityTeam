@@ -7,6 +7,12 @@ export interface Game {
   features: string[]
   trailer: string
   link: string
+  buyGame: {
+    title: string
+    description: string
+    buttonDescription: string
+    linkGame: string
+  }[]
 }
 
 export interface Games {
