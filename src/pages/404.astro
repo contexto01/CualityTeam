@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+// Obtén la URL actual
+const currentUrl = Astro.url.pathname
+---
+
+<Layout title="No se encontró">
+  <section style="text-align: center; padding: 2rem;">
+    <h1>404 - Página no encontrada</h1>
+    {
+      currentUrl.startsWith('/games/') ? (
+        <p>Lo sentimos, el juego que buscas no existe.</p>
+      ) : (
+        <p>Lo sentimos, la página que buscas no existe.</p>
+      )
+    }
+    <a href="/" style="color: #0070f3; text-decoration: underline;">Volver al inicio</a>
+  </section>
+</Layout>

@@ -1,0 +1,37 @@
+<header class="navbar bg-quaternary-color text-secondary-color">
+  <nav class="flex flex-col gap-y-2 sm:flex-row mx-auto max-w-3xl px-5 py-2 items-center">
+    <a href="/" class="flex flex-1 items-center">
+      <img src="/Logo.webp" class="h-14 w-14 aspect-square" alt="Logo de la empresa" />
+      <h1 class="ml-2 text-lg font-bold">CUALITY TEAM</h1>
+    </a>
+    <ul class="flex flex-1 justify-center gap-x-5 items-center">
+      <li><a href="/">TIENDA</a></li>
+      <li><a href="/acerca-de">ACERCA DE</a></li>
+      <li><a href="/soporte">SOPORTE</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  ul li a:hover {
+    color: var(--primary-color);
+  }
+  .active-link {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color); /* Ejemplo: color rojo tomate */
+    font-weight: bold;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname
+    const navLinks = document.querySelectorAll('.navbar ul a')
+
+    navLinks.forEach((link) => {
+      if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active-link')
+      }
+    })
+  })
+</script>

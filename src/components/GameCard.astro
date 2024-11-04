@@ -1,0 +1,32 @@
+---
+// Definimos las props que el componente puede recibir
+interface Props {
+  imgSrc: string
+  title: string
+  description: string
+  link: string
+  key: string
+}
+
+const { imgSrc, title, description, link } = Astro.props
+---
+
+<div
+  class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-5 mb-8 bg-quaternary-color p-5 rounded-lg"
+>
+  <img
+    src={imgSrc}
+    alt={title}
+    class="flex-1 max-w-60 w-[240px] h-[240px] rounded-lg aspect-square"
+  />
+  <div class="product-content">
+    <h4 class="text-3xl font-bold mb-2">{title}</h4>
+    <p class="text-base mb-3">{description}</p>
+    <a
+      href={link}
+      class="inline-block mt-3 py-2 px-5 bg-primary-color text-secondary-color rounded transition-all font-semibold hover:bg-secondary-color hover:text-primary-color"
+    >
+      Más información
+    </a>
+  </div>
+</div>
