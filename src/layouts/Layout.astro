@@ -19,7 +19,37 @@ const currentYear = new Date().getFullYear()
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href={icon ?? '/Logo.png'} />
-    <meta name="generator" content={Astro.generator} />
+    <!-- Meta description -->
+    <meta
+      name="description"
+      content="Cuality Team - Tu tienda de juegos favorita con una amplia selección de títulos para todos los gamers."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Cuality Team" />
+    <meta
+      name="keywords"
+      content="juegos, tienda de juegos, gamers, videojuegos, Cuality Team"
+    />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Cuality Team - Tu tienda de juegos favorita con una amplia selección de títulos para todos los gamers."
+    />
+    <meta property="og:image" content={icon ?? '/Logo.png'} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta
+      name="twitter:description"
+      content="Cuality Team - Tu tienda de juegos favorita con una amplia selección de títulos para todos los gamers."
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content={title} />
+    <meta name="theme-color" content="#111" />
+
+    <meta name="twitter:image" content={icon ?? '/Logo.png'} />
     <title>{title}</title>
   </head>
   <body>
